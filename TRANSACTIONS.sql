@@ -1,0 +1,47 @@
+INSERT INTO TRANSACTION_HISTORY (TID,CRID,CID,SID,Transaction_Date)
+
+	SELECT 1,1002,111,'LM','05-25-2019' FROM DUAL
+	UNION ALL SELECT 2,1003,111,'VC','05-25-2019'FROM DUAL
+	UNION ALL SELECT 3,1002,112,'CK','06-01-2019'FROM DUAL;
+
+INSERT INTO FEED_BACK (FID,CRID,CID,TID,Feed_back_Comment)
+
+	SELECT 100,1002,111,1,'Jason was very nice and did everying to perfection' FROM DUAL
+	UNION ALL SELECT 200,1003,111,2,'Marco was rude and broke my vacuum' FROM DUAL
+	UNION ALL SELECT 300,1002,112,3,'Jason is a wonderful cook. 10/10 would hire again'FROM DUAL;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+INSERT INTO TRANSACTION_HISTORY (TID,CRID,CID,SID,Transaction_Date)
+
+	SELECT 4,1011,121,'CK','09-16-2019' FROM DUAL
+	UNION ALL SELECT 5,1008,118,'PD','12-01-2019'FROM DUAL
+	UNION ALL SELECT 6,1006,115,'PD','12-01-2019'FROM DUAL;
+
+INSERT INTO FEED_BACK (FID,CRID,CID,TID,Feed_back_Comment)
+
+	SELECT 400,1011,121,4,'Jared made the worst steak I have ever had' FROM DUAL
+	UNION ALL SELECT 500,1008,118,5,'Luke forgot to shovel the walkway to the curb' FROM DUAL
+	UNION ALL SELECT 600,1006,115,6,'Ryan was able to shovel everything in just 30 minutes'FROM DUAL;
+	
+	
+	
+	
+	
+INSERT INTO TRANSACTION_HISTORY (TID,CRID,CID,SID,Transaction_Date)
+
+	SELECT 7,1012,113,'VC','12-15-2019' FROM DUAL
+	UNION ALL SELECT 8,1004,117,'CK','01-05-2020'FROM DUAL
+	UNION ALL SELECT 9,1010,112,'BG','01-09-2020'FROM DUAL;
+
+INSERT INTO FEED_BACK (FID,CRID,CID,TID,Feed_back_Comment)
+
+	SELECT 700,1012,113,7,'Brad was nice, but he had trouble turning the vacuum on' FROM DUAL
+	UNION ALL SELECT 800,1004,117,8,'Mikko made me a delicious chicken dinner' FROM DUAL
+	UNION ALL SELECT 900,1010,112,9,'Matt was so delightful I let him beat me in scrabble'FROM DUAL;
